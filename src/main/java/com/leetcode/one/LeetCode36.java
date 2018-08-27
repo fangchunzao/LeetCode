@@ -42,15 +42,21 @@ public class LeetCode36 {
         // 判断行 和 列
         for (int r = 0; r < board.length; r++) {
             array = board[r];
+            // 判断行
             if (isValidArray2(array)) return false;
-            colArray = new char[9];
+            colArray = new char[9];  // 列数组
             for (int c = 0; c < board[r].length; c++) {
                 colArray[c] = board[c][r];
+                // 判断块
+                if (r % 3 == 0 && c % 3 == 0) { // 当 行 或者 列满足条件  生成一个块
+                    if(isValidBlock(board,r,c)) return false;
+                }
             }
+             // 判断列
             if (isValidArray2(colArray)) return false;
         }
         // 判断列
-        /* 多了层循环 LeetCode会超时
+        /*
         for (int r = 0; r < board.length; r++) {
             array = new char[9];
             for (int c = 0; c < board[r].length; c++) {
@@ -59,13 +65,7 @@ public class LeetCode36 {
             if (isValidArray(colArray)) return false;
         }*/
         // 判断块
-        for (int r = 0; r < board.length; r++) {
-            for (int c = 0; c < board[r].length; c++) {
-                if (r % 3 == 0 && c % 3 == 0) { // 当 行 或者 列满足条件  生成一个块
-                    if(isValidBlock(board,r,c)) return false;
-                }
-            }
-        }
+
         return true;
     }
 

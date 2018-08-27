@@ -6,7 +6,11 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ *  两个数组的交集 II
  *
+ *   给定两个数组，写一个方法来计算它们的交集。
+ *   例如:
+ *   给定 nums1 = [1, 2, 2, 1], nums2 = [2, 2], 返回 [2, 2].
  */
 public class Array6 {
 
