@@ -33,7 +33,6 @@ public class LeetCode28 {
                     return i;
                 }
             }
-
         }
         return -1;
     }
