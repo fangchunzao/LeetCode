@@ -9,7 +9,7 @@ package com.leetcode.train.binary_search;
 public class subject1ForTemplate1 {
 
     public static void main(String[] args) {
-        System.out.println(mySqrt(2147395599));
+        System.out.println(mySqrt(25));
     }
 
     /**
@@ -25,7 +25,7 @@ public class subject1ForTemplate1 {
      */
     public static int mySqrt(int x) {
         if (x <= 1) return x;
-        int left = 0, right = 46339;  // 当X为int的最大值时
+        int left = 0, right = 46341;  // 当X为int的最大值时
         while (left < right) {
             int mid = left + (right - left) / 2;
             int value = mid * mid;
