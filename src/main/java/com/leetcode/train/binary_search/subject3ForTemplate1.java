@@ -66,7 +66,7 @@ public class subject3ForTemplate1 {
                     right = mid - 1;  // 右侧无序
                 }
             } else {
-                if(nums[left] <= target && nums[mid] > target) {   // 左侧有序1
+                if(nums[left] <= target && nums[mid] > target) {   // 左侧有序
                     right = mid - 1;
                 } else {
                     left = left + 1;
