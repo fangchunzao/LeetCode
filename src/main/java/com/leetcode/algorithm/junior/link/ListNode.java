@@ -1,4 +1,4 @@
-package com.leetcode.junior.link;
+package com.leetcode.algorithm.junior.link;
 
 public class ListNode {
     ListNode(Integer x) { val = x; }

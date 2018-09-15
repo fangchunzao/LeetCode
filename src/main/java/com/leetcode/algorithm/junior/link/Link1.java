@@ -1,6 +1,4 @@
-package com.leetcode.junior.link;
-
-import java.util.List;
+package com.leetcode.algorithm.junior.link;
 
 /**
  *  删除链表中的节点

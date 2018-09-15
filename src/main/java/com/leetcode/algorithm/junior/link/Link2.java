@@ -1,6 +1,4 @@
-package com.leetcode.junior.link;
-
-import com.leetcode.junior.link.ListNode;
+package com.leetcode.algorithm.junior.link;
 
 public class Link2 {
 
