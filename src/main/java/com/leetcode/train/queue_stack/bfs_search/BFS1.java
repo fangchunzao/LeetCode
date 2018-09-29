@@ -27,7 +27,7 @@ public class BFS1 {
     }
 
     /**
-     * description: todo
+     * description: 使用广度优先进行遍历
      * @param grid: 二维网格
      * @author FCZ
      * @since 2018-09-29
