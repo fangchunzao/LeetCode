@@ -49,7 +49,7 @@ public class BFS1 {
         return count++;
     }
 
-    // 每遇到'1'后, 开始向四个方向 递归搜索. 搜到后变为'0',
+    // 每遇到'1'后, 开始向四个方向 递归搜索. 搜到后变为'0 ',
     // 因为相邻的属于一个island. 然后开始继续找下一个'1'.
     private static void dfsSearch(char[][] grid, int i, int j, int rows, int cols) {
         if (i < 0 || i >= rows || j < 0 || j >= cols)
