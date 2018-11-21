@@ -1,5 +1,7 @@
 package com.leetcode.train.array;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @author FCZ
  * @since 2018/11/2 09:30
@@ -54,7 +56,6 @@ public class String1 {
         }
         return result;
     }
-
     public static String addBinary1(String a, String b) {
         if (a == null || b == null || a.length() == 0 || b.length() == 0) return null;
         String result = "";
