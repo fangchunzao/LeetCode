@@ -1,6 +1,5 @@
 package com.leetcode.train.binary_tree;
 
-import sun.misc.Unsafe;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,13 +23,6 @@ public class PreorderTraversal {
 
         List<Integer> result = preorderTraversal(treeNode);
         System.out.println(Arrays.toString(result.toArray()));
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
     }
 
     public static List<Integer> preorderTraversal(TreeNode root) {
