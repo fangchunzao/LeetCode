@@ -23,9 +23,11 @@ public class LeetCode9 {
         }
         int revertedNumber = 0;
         while (revertedNumber < x) {
+            // 对10取余获取
             revertedNumber = (x % 10) + (10 * revertedNumber);
             x /= 10;
         }
+        //  x == (revertedNumber / 10) 如果字符串位数是单数 中间一位不参与计算
         return revertedNumber == x || x == (revertedNumber / 10);
     }
 }
