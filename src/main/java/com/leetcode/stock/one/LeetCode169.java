@@ -1,8 +1,6 @@
 package com.leetcode.stock.one;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 169. 求众数
@@ -29,12 +27,27 @@ import java.util.Map;
 public class LeetCode169 {
 
     public static void main(String[] args) {
-        int a[] = {1,1,1,2,2,2,2,2};
+        LeetCode169 oj = new LeetCode169();
 
-        System.out.println(majorityElement0(a));
+        int a[] = {6,5,5};
+
+        System.out.println(oj.majorityElement2(a));
     }
 
-    // 递归实现
+    // Boyer-Moore 投票算法
+    public int majorityElement2(int[] nums) {
+        int count = 0;
+        int candidate = 0;
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
+            }
+            count += (num == candidate) ? 1 : -1;
+        }
+        return candidate;
+    }
+
+    // 排序 中间的就是
     public static int majorityElement0(int[] nums) {
         Arrays.sort(nums);
         return nums[nums.length / 2];
