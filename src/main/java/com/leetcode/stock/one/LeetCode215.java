@@ -51,7 +51,6 @@ public class LeetCode215 {
             } else if (index < target) {
                 left = index + 1;
             } else {
-                assert index > target;
                 right = index - 1;
             }
         }
