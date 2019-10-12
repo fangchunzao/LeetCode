@@ -48,13 +48,11 @@ public class LeetCode238 {
     public int[] productExceptSelf1(int[] nums) {
         int[] res = new int[nums.length];
         int k = 1;
-        // 每个索引位置 是 前面数字的乘积
-        for (int i = 0; i < res.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             res[i] = k;
             k *= nums[i];
         }
         k = 1;
-        // k值为后面数字的乘积 res每个位置存放 前数字乘积 乘以 k（后面数字的乘积）
         for (int i = nums.length - 1; i >= 0; i--) {
             res[i] *= k;
             k *= nums[i];
