@@ -1,6 +1,8 @@
 package com.leetcode.stock.one;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author FangChunZao
@@ -40,4 +42,17 @@ public class LeetCode1 {
         }
         return result;
     }
+    // 最优解 hash遍历
+    public int[] twoSum1(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+            map.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
+
 }
