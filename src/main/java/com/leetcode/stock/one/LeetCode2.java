@@ -75,6 +75,7 @@ public class LeetCode2 {
             }
             // 放入listNode中
             if (listNode.val == -1) {
+                // 第一个节点的初始化
                 listNode = new ListNode(sum);
                 resultNode = listNode;
             } else {
