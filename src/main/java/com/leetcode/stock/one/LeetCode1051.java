@@ -20,6 +20,7 @@ import java.util.Arrays;
  */
 public class LeetCode1051 {
 
+    // 排序后与原数组对比
     public int heightChecker(int[] heights) {
         int[] oldArray = heights.clone();
         Arrays.sort(heights);
