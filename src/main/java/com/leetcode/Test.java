@@ -36,4 +36,36 @@ public class Test {
         return (count['U' - 'A'] == count['D' - 'A'] && count['L' - 'A'] == count['R' - 'A']);
     }
 
+    public int maxSubArray1(int[] nums) {
+        if(nums.length==0)
+            return 0;
+        int addNum = nums[0];
+        int maxNum = Integer.MIN_VALUE;
+        for (int i = 1; i < nums.length; i++) {
+
+            if (addNum < nums[i]) {
+                addNum = nums[i];
+                continue;
+            }
+
+            addNum += nums[i];
+
+            maxNum = Math.max(addNum, maxNum);
+        }
+        return maxNum;
+    }
+
+    public int maxSubArray(int[] nums) {
+        if(nums.length==0)
+            return 0;
+        int cursum=nums[0];
+        int maxsum=nums[0];
+        for(int i=1;i<nums.length;i++)
+        {
+            cursum=Math.max(nums[i],cursum+nums[i]);
+            maxsum=Math.max(cursum,maxsum);
+        }
+        return maxsum;
+    }
+
 }
