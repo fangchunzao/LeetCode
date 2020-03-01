@@ -56,7 +56,7 @@ public class Offer4 {
         ));
     }
 
-
+    // 从数组左下角开始查找
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;
