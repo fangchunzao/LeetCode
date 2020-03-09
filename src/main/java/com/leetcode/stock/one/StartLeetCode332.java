@@ -23,19 +23,19 @@ import java.util.Arrays;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  */
-public class LeetCode332 {
+public class StartLeetCode332 {
 
     public static void main(String[] args) {
-        LeetCode332 obj = new LeetCode332();
+        StartLeetCode332 obj = new StartLeetCode332();
         //        [186,419,83,408]
-//6249
+        //6249
         System.out.println(obj.coinChange1(new int[] {186,419,83,408}, 6249));
     }
 
     // 动态规划
     public int coinChange(int[] coins, int amount) {
         int max = amount + 1;
-        int[] dp = new int[amount + 1];
+        int[] dp = new int[max];
         Arrays.fill(dp, max);
         dp[0] = 0;
         // dp数组表示的为 每一位所需要硬币的最小数
@@ -60,9 +60,17 @@ public class LeetCode332 {
         coinChange1(coins, coins.length - 1, amount, 0);
         return minResult == Integer.MAX_VALUE ? -1 : minResult;
     }
+
+    /**f
+     *
+     * @param coins 硬币数组
+     * @param amount 总金额
+     * @param index 数组索引
+     * @param cnt 使用的硬币数量
+     */
     private void coinChange1(int[] coins, int amount, int index, int cnt) {
         if (index < 0) return;
-        // amount / coins[index] 当前硬币最大可能次数 大概率不会直接符合条件 因此使用回溯进行递减
+        // amount / coins[index] 当前使用硬币的最大可能次数 大概率不会直接符合条件 因此使用回溯进行递减
         for (int i = amount / coins[index]; i >= 0; i--) {
             // 计算 剩下的数还有多少   总数-(最大个数*当前数)
             int currRest = amount - i * coins[index],
@@ -74,6 +82,7 @@ public class LeetCode332 {
             else {
                 if (currRest == 0 && currCnt < minResult)
                     minResult = currCnt;
+                // 已经找到当前硬币个数为 i 时的最小值，再继续分解，数量只会增加 减少递归次数 break
                 break;
             }
         }

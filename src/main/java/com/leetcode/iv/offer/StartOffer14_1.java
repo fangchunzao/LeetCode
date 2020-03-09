@@ -24,12 +24,12 @@ package com.leetcode.iv.offer;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  */
-public class Offer14_1 {
+public class StartOffer14_1 {
 
     int[] memory;
 
     public static void main(String[] args) {
-        Offer14_1 obj = new Offer14_1();
+        StartOffer14_1 obj = new StartOffer14_1();
 
         System.out.println(obj.integerBreak3(5));
     }
@@ -68,7 +68,7 @@ public class Offer14_1 {
         // i 为当前长度
         for (int i = 3; i <= n; i++) {
             // j为分割长度
-            for (int j = 1; j <= i - 1; j++) {
+            for (int j = 1; j < i; j++) {
                 // j * (i - j)  以 j长度 分割后 到 末尾最大值 相乘
                 // j * memory[i - j] 以i长度 分割后 剩余的长度能分割的最大长度 i-j 的位置保存之前计算好的值
                 memory[i] = Math.max(memory[i], Math.max(j * memory[i - j], j * (i - j)));

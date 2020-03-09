@@ -36,6 +36,12 @@ import java.util.Map;
  */
 public class Offer7 {
 
+    public static void main(String[] args) {
+        Offer7 obj = new Offer7();
+        obj.buildTree(new int[] {3,9,20,15,7},
+                new int[] {9,3,15,20,7}
+                );
+    }
 
     /**
      *  二叉树的前序遍历顺序是：根节点、左子树、右子树，每个子树的遍历顺序同样满足前序遍历顺序。
@@ -83,6 +89,8 @@ public class Offer7 {
             TreeNode leftSubtree = buildTree(preorder, preorderStart + 1, preorderStart + leftNodes,
                     inorder, inorderStart, rootIndex - 1, indexMap);
             // 构建右子树
+            System.out.println(preorderStart + leftNodes + 1);
+            System.out.println(preorderEnd - rightNodes + 1);
             TreeNode rightSubtree = buildTree(preorder, preorderEnd - rightNodes + 1, preorderEnd,
                     inorder, rootIndex + 1, inorderEnd, indexMap);
 
