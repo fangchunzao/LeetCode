@@ -8,11 +8,27 @@ import java.util.*;
  */
 public class Test {
 
-    public static void main(String[] args) {
-        String str =
-                "";
-        System.out.print(str.split(",").length);
+    public static int maxProfit(int[] prices) {
+        int minprice = Integer.MAX_VALUE;
+        int maxprofit = 0;
+        for (int i = 0; i < prices.length; i++) {
+            System.out.println(prices[i]);
+            if (prices[i] < minprice) {
+                System.out.println("-----");
+                minprice = prices[i];
+            } else if (prices[i] - minprice > maxprofit) {
+                maxprofit = prices[i] - minprice;
+            }
+        }
+        System.out.println(maxprofit);
+        return maxprofit;
     }
+
+    public static void main(String[] args) {
+        int[] prices = new int[]{7, 1, 5, 3, 6, 4};
+        maxProfit(prices);
+    }
+
 
     public boolean judgeCircle(String moves) {
         int hang = 0; // 计算行
