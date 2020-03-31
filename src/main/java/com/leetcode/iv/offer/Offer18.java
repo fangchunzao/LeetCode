@@ -41,7 +41,7 @@ public class Offer18 {
         ListNode newHead = head;
         ListNode newHead2 = head.next;
         while (newHead2 != null) {
-            if (newHead.val == val) {
+            if (newHead2.val == val) {
                 newHead.next = newHead2.next;
                 break;
             }
