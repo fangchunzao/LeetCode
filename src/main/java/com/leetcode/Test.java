@@ -84,4 +84,24 @@ public class Test {
         return maxsum;
     }
 
+    public List<String> generateParenthesis(int n) {
+        List<String> list = new ArrayList<>();
+        generateParenthesis(n, list, "",0, 0);
+        return list;
+    }
+
+    public void generateParenthesis(int n, List<String> list, String str, int left, int right) {
+        if (left == n && right == n) {
+            list.add(str);
+            return;
+        }
+
+        if (left < n)
+            generateParenthesis(n, list, str + "(", left + 1, right);
+
+        if (right < left)
+            generateParenthesis(n, list, str + ")", left, right + 1);
+
+    }
+
 }
