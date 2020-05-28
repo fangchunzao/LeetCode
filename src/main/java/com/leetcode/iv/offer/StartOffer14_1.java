@@ -63,6 +63,8 @@ public class StartOffer14_1 {
 
     // 动态规划 由记忆回溯推导出
     public int integerBreak3(int n) {
+        if(n <= 3) return n - 1;
+
         memory = new int[n + 1];
         memory[2] = 1;
         // i 为当前长度
@@ -81,10 +83,14 @@ public class StartOffer14_1 {
     // 贪心法 分割长度3 效益最高 尽量分割为3
     public int cuttingRope1(int n) {
         if(n <= 3) return n - 1;
+        // 尽可能全部拆分成3
         int a = n / 3,
                 b = n % 3;
+        // 能够全部分割成3
         if(b == 0) return (int)Math.pow(3, a);
+        // 多了一个1  为了最大化乘积 需要减掉一个3, 加上之前的1，*4
         if(b == 1) return (int)Math.pow(3, a - 1) * 4;
+        // 多了一个2 直接乘就行
         return (int)Math.pow(3, a) * 2;
     }
 
