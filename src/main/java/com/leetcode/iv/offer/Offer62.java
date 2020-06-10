@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author fcz
- * @description 面试题62. 圆圈中最后剩下的数字
+
+ * description 面试题62. 圆圈中最后剩下的数字
  *
- * 0,1,,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。
+ * 0,1,,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字。
+ * 求出这个圆圈里剩下的最后一个数字。
  *
  * 例如，0、1、2、3、4这5个数字组成一个圆圈，从数字0开始每次删除第3个数字，则删除的前4个数字依次是2、0、4、1，
  * 因此最后剩下的数字是3。
@@ -28,14 +29,30 @@ import java.util.List;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- *
- * @date 2020-03-30 17:31
+ * @author fcz
+ * @since  2020-03-30 17:31
  **/
 public class Offer62 {
 
     public static void main(String[] args) {
         Offer62 obj = new Offer62();
         System.out.println(obj.lastRemaining(5,1));
+    }
+
+    public int lastRemaining1(int n, int m) {
+        // 构造出一个list方便指定位置的remove
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            list.add(i);
+        }
+        int index = 0;
+        while (n > 1) {
+            // 计算下一个删除的坐标位置
+            index = (index + m - 1) % n;
+            list.remove(index);
+            n--;
+        }
+        return list.get(0);
     }
 
     // 必须使用数学法 使用别的会超时
