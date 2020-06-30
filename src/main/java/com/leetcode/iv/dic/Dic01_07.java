@@ -1,8 +1,8 @@
 package com.leetcode.iv.dic;
 
 /**
- * @author fcz
- * @description 面试题 01.07. 旋转矩阵
+ *
+ * description 面试题 01.07. 旋转矩阵
  *
  * 给你一幅由 N × N 矩阵表示的图像，其中每个像素的大小为 4 字节。请你设计一种算法，将图像旋转 90 度。
  *
@@ -47,19 +47,10 @@ package com.leetcode.iv.dic;
  * 链接：https://leetcode-cn.com/problems/rotate-matrix-lcci
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
- * @date 2020-04-07 15:28
+ * @author fcz
+ * @since  2020-04-07 15:28
  **/
-public class IV01_07 {
-
-    public static void main(String[] args) {
-        IV01_07 obj = new IV01_07();
-        obj.rotate(new int[][]{
-                { 5, 1, 9,11,1},
-                { 2, 4, 8,10,1},
-                {13, 3, 6, 7,1},
-                {15,14,12,16,1},
-        });
-    }
+public class Dic01_07 {
 
     // 反转大法
     public void rotate1(int[][] matrix) {
