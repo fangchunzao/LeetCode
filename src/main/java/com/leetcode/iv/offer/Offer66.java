@@ -12,8 +12,12 @@ import java.util.Arrays;
  *
  * 输入: [1,2,3,4,5]
  * 输出: [120,60,40,30,24]
- *  
- *
+ *      1  2  3  4  5
+ *  1   X
+ *  2      X
+ *  3         X
+ *  4            X
+ *  5               X
  * 提示：
  *
  * 所有元素乘积之和不会溢出 32 位整数
@@ -25,6 +29,8 @@ import java.util.Arrays;
  *
  * @author fcz
  * @since 2020-06-16 14:56
+ *
+ * @since 2020-07-01
  **/
 public class Offer66 {
 
@@ -54,21 +60,6 @@ public class Offer66 {
         for (int i = b.length - 2; i >= 0; i--) {
             high *= a[i + 1];
             b[i] *= high;
-        }
-        return b;
-    }
-
-    public int[] constructArr2(int[] a) {
-        if(a.length == 0) return new int[0];
-        int[] b = new int[a.length];
-        b[0] = 1;
-        int tmp = 1;
-        for(int i = 1; i < a.length; i++) {
-            b[i] = b[i - 1] * a[i - 1];
-        }
-        for(int i = a.length - 2; i >= 0; i--) {
-            tmp *= a[i + 1];
-            b[i] *= tmp;
         }
         return b;
     }
