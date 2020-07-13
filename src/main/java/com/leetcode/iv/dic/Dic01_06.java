@@ -29,7 +29,7 @@ package com.leetcode.iv.dic;
  */
 public class Dic01_06 {
 
-
+    // 双指针
     public String compressString(String S) {
         if (S.length() == 0)
             return "";
@@ -47,6 +47,26 @@ public class Dic01_06 {
         }
         sb.append(strArr[one]).append(two - one);
         return sb.length() >= S.length() ? S : sb.toString();
+    }
+
+    // 按照题意
+    public String compressString1(String S) {
+        if (S == null || S.length() <= 1) return S;
+
+        StringBuilder result = new StringBuilder();
+        int count = 1;
+        char cc = S.charAt(0);
+        for (int i = 1; i < S.length(); i++) {
+            if (cc != S.charAt(i)) {
+                result.append(cc).append(count);
+                cc = S.charAt(i);
+                count = 1;
+                continue;
+            }
+            count++;
+        }
+        result.append(cc).append(count);
+        return result.length() < S.length() ? result.toString() : S;
 
     }
 
