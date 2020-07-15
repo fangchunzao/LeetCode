@@ -30,23 +30,6 @@ import java.util.Deque;
  */
 public class Dic03_02 {
 
-    public static void main(String[] args) {
-        Deque<Integer> deque = new ArrayDeque<>();
-        for (int i = 0; i < 3; i++) {
-            deque.push(i);
-        }
-        System.out.println(deque.peek());
-        System.out.println(deque.peekFirst());
-        System.out.println(deque.peekLast());
-        System.out.println(deque.pop());
-
-        Deque<Integer> deque2 = new ArrayDeque<>();
-        deque2.offer(1);
-        deque2.offer(2);
-        deque2.offer(3);
-        System.out.println(deque2.poll());
-    }
-
     Deque<Integer> deque = new ArrayDeque<>();
     Deque<Integer> dequeMin = new ArrayDeque<>();
 
