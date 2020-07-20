@@ -28,11 +28,9 @@ package com.leetcode.iv.offer;
 public class Offer16 {
 
     public static void main(String[] args) {
-        Offer16 obj = new Offer16();
-        double x = 2;
-        int b = -4;
-        System.out.println(obj.myPow1(x,b));
-        System.out.println(Math.pow(x,b));
+
+//        System.out.println(-5 % 2);
+        System.out.println(-1 / 2);
     }
 
     public double myPow(double x, int n) {

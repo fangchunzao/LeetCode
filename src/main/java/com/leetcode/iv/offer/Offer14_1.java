@@ -23,16 +23,11 @@ package com.leetcode.iv.offer;
  * 链接：https://leetcode-cn.com/problems/jian-sheng-zi-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-07-15 复习
  */
-public class StartOffer14_1 {
+public class Offer14_1 {
 
     int[] memory;
-
-    public static void main(String[] args) {
-        StartOffer14_1 obj = new StartOffer14_1();
-
-        System.out.println(obj.integerBreak3(5));
-    }
 
     public int integerBreak(int n) {
         memory = new int[n + 1];
