@@ -32,11 +32,6 @@ package com.leetcode.iv.dic;
  */
 public class Dic01_05 {
 
-    public static void main(String[] args) {
-
-        System.out.println(oneEditAway("teacher","bleacher"));
-    }
-
     /**
      * 主要思路是，只有一个地方需要修改，那么不妨定位到不同字符处。有以下两种情况
      * （1）leetcode 与 leetkode。

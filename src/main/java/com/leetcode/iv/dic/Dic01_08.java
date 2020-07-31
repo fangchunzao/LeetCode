@@ -46,11 +46,6 @@ import java.util.Set;
  */
 public class Dic01_08 {
 
-    public static void main(String[] args) {
-        setZeroes(new int[][]{
-                {0,1,2,0}
-        });
-    }
     // 使用第一行保存需要清空的列
     public static void setZeroes(int[][] matrix) {
         if (matrix == null || matrix.length == 0)
