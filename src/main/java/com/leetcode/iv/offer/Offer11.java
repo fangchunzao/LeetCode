@@ -28,8 +28,8 @@ public class Offer11 {
         System.out.println(obj.minArray(new int[] {1,3,5}));
 
     }
-    // 二分查找 需要与右边对比 与左边对比不可以
-    // 因为mid取值 趋近左侧 这样可以直接与右边对比 如果跟左边对比 对比不出结果
+    // 二分查找 需要与右边对比
+    // 如果与左边对比 [1,2,3,4,5]   [3,4,5,1,2]  中间的值与左侧对比 最小值都在左侧
     public int minArray(int[] numbers) {
         int i = 0, j = numbers.length - 1;
         while (i < j) {

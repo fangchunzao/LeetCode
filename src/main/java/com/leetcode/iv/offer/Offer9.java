@@ -32,15 +32,6 @@ import java.util.Stack;
  */
 public class Offer9 {
 
-    public static void main(String[] args) {
-        Offer9 obj = new Offer9();
-        System.out.println(obj.deleteHead());
-        obj.appendTail(5);
-        obj.appendTail(2);
-        System.out.println(obj.deleteHead());
-        System.out.println(obj.deleteHead());
-    }
-
     Stack<Integer> stack1;
     Stack<Integer> stack2;
 
