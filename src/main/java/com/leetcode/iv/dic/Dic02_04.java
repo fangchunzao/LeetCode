@@ -24,22 +24,6 @@ import com.leetcode.struct.ListNode;
  */
 public class Dic02_04 {
 
-    public static void main(String[] args) {
-        ListNode ln1 = new ListNode(1);
-        ListNode ln2 = new ListNode(4);
-        ListNode ln3 = new ListNode(3);
-        ListNode ln4 = new ListNode(2);
-        ListNode ln5 = new ListNode(5);
-        ListNode ln6 = new ListNode(2);
-
-        ln1.next = ln2;
-        ln2.next = ln3;
-        ln3.next = ln4;
-        ln4.next = ln5;
-        ln5.next = ln6;
-        partition(ln1, 3);
-    }
-
     /**
      * 使用双指针
      * 左侧指针指向大于x的位置  右侧指针指向小于x的位置 互换

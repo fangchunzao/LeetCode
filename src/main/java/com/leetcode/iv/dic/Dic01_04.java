@@ -28,10 +28,6 @@ import java.util.Map;
  */
 public class Dic01_04 {
 
-    public static void main(String[] args) {
-        System.out.println(canPermutePalindrome("tactcoa"));
-    }
-
     // 回文数的规律
     // 统计每个字符出现的次数 如果全是偶数次 肯定是了
     // 奇数次的字符只能有一个
