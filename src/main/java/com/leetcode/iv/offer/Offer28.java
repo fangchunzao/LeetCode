@@ -7,6 +7,14 @@ import com.leetcode.struct.TreeNode;
  *
  * 请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
  *
+ *            1
+ *           / \
+ *      2           2
+ *     / \         / \
+ *   3     4     4    3
+ *  / \   / \   / \   / \
+ * 5   6 6   5 7   6 6   7
+ *
  * 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
  *
  *     1
@@ -22,8 +30,6 @@ import com.leetcode.struct.TreeNode;
  *    \   \
  *    3    3
  *
- *  
- *
  * 示例 1：
  *
  * 输入：root = [1,2,2,3,4,4,3]
@@ -37,12 +43,10 @@ import com.leetcode.struct.TreeNode;
  * 链接：https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-09 复习
+ *
  */
 public class Offer28 {
-
-    public static void main(String[] args) {
-
-    }
 
     // 从根节点分为左右两个几点
     // 左子树的左节点 = 右子树的右节点

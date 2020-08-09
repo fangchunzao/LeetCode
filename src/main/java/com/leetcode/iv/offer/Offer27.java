@@ -32,12 +32,9 @@ import com.leetcode.struct.TreeNode;
  * 链接：https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-09 复习
  */
 public class Offer27 {
-
-    public static void main(String[] args) {
-
-    }
 
     public TreeNode mirrorTree(TreeNode root) {
         if (root == null) return null;

@@ -24,14 +24,10 @@ package com.leetcode.iv.offer;
  * 链接：https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-09 复习
+ *
  */
 public class Offer16 {
-
-    public static void main(String[] args) {
-
-//        System.out.println(-5 % 2);
-        System.out.println(-1 / 2);
-    }
 
     public double myPow(double x, int n) {
         if (n == 0) return 1;

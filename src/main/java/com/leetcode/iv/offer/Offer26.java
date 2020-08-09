@@ -40,8 +40,7 @@ import com.leetcode.struct.TreeNode;
  * 链接：https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
- * @author fcz
- * @since 2020-06-16 16:32
+ * @since 2020-08-09 复习
  **/
 public class Offer26 {
 

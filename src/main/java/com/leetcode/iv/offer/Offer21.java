@@ -1,7 +1,5 @@
 package com.leetcode.iv.offer;
 
-import java.util.Arrays;
-
 /**
  * 面试题21. 调整数组顺序使奇数位于偶数前面
  *
@@ -25,13 +23,9 @@ import java.util.Arrays;
  * 链接：https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-09 复习
  */
 public class Offer21 {
-
-    public static void main(String[] args) {
-        Offer21 obj = new Offer21();
-        System.out.println(Arrays.toString(obj.exchange(new int[] {2,4,6})));
-    }
 
     // 双指针
     public int[] exchange(int[] nums) {

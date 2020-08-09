@@ -20,6 +20,8 @@ import com.leetcode.struct.ListNode;
  * 链接：https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-09 复习
+ *
  */
 public class Offer22 {
 

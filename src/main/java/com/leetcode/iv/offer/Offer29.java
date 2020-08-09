@@ -27,18 +27,10 @@ import java.util.Arrays;
  * 链接：https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-09 复习
+ *
  */
 public class Offer29 {
-
-    public static void main(String[] args) {
-        Offer29 obj = new Offer29();
-        System.out.println(Arrays.toString(obj.spiralOrder(new int[][]{
-                {1,2,3,4},
-                {5,6,7,8},
-                {9,10,11,12},
-        })));
-
-    }
 
     // 从左到右 从上到下 从右到左 从下到上 依次遍历
     public int[] spiralOrder(int[][] matrix) {
