@@ -14,6 +14,8 @@ import java.util.Map;
  * 输出：[[7,null],[13,0],[11,4],[10,2],[1,0]]
  *
  * https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/
+ *
+ * @since 2020-08-11 复习
  */
 public class Offer35 {
 
@@ -29,11 +31,7 @@ public class Offer35 {
         }
     }
 
-    public static void main(String[] args) {
-
-    }
-
-    Map<Node, Node> map = new HashMap();
+    Map<Node, Node> map = new HashMap<>();
 
     // 使用哈希表 保存每一个节点对应的 copy节点
     public Node copyRandomList(Node head) {

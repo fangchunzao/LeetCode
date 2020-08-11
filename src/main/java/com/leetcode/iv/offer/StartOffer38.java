@@ -19,14 +19,9 @@ import java.util.*;
  *
  * 1 <= s 的长度 <= 8
  *
+ * @since 2020-08-11 复习
  */
-public class Offer38 {
-
-    public static void main(String[] args) {
-        Offer38 obj = new Offer38();
-        obj.permutation1("abcd");
-
-    }
+public class StartOffer38 {
 
     List<String> list = new ArrayList<>();
     // 回溯 替换 最优解

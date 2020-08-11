@@ -29,17 +29,9 @@ import java.util.Stack;
  * 链接：https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-11 复习
  */
 public class Offer31 {
-
-    public static void main(String[] args) {
-        Offer31 obj = new Offer31();
-        System.out.println(obj.validateStackSequences(
-                new int[]{1,2,3,4,5},
-                new int[]{1,2,3,4,5}
-        ));
-
-    }
 
     // 栈模拟
     public boolean validateStackSequences(int[] pushed, int[] popped) {

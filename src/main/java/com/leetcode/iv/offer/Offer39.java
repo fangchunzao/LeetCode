@@ -19,11 +19,6 @@ import java.util.Map;
  */
 public class Offer39 {
 
-    public static void main(String[] args) {
-        Offer39 obj = new Offer39();
-        System.out.println(obj.majorityElement(new int[]{1, 2, 3, 2, 2, 2, 5, 4, 2}));
-    }
-
     // 投票计数
     // 1.初始化计数器cnt = 0； 返回目标值n = nums[0]; 表示从此时开始计算投票。
     //

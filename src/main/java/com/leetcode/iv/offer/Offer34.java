@@ -30,12 +30,9 @@ import java.util.List;
  *    [5,8,4,5]
  * ]
  *
+ * @since 2020-08-11 复习
  */
 public class Offer34 {
-
-    public static void main(String[] args) {
-
-    }
 
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> result = new ArrayList<>();
