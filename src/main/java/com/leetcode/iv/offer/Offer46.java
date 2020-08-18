@@ -20,13 +20,10 @@ package com.leetcode.iv.offer;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+ *
+ * @since 2020-08-18 复习
  */
 public class Offer46 {
-
-    public static void main(String[] args) {
-        Offer46 offer46 = new Offer46();
-        System.out.println(offer46.translateNum(506));
-    }
 
     public int translateNum(int num) {
         String numStr = String.valueOf(num);
@@ -59,6 +56,10 @@ public class Offer46 {
     }
 
     // 动态规划
+    // 分为两种情况
+    //   1. 能构成双位数 dp[i] = dp[i - 1] + dp[i - 2]
+    //   2. 不能构成 dp[i] = dp[i - 1]
+    //
     public int translateNum1(int num) {
         String s = String.valueOf(num);
         int a = 1, b = 1;

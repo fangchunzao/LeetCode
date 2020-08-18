@@ -1,5 +1,7 @@
 package com.leetcode.iv.offer;
 
+import java.util.Arrays;
+
 /**
  * 面试题40. 最小的k个数
  *
@@ -17,13 +19,11 @@ package com.leetcode.iv.offer;
  * 输入：arr = [0,1,2,1], k = 1
  * 输出：[0]
  *
+ * @since 2020-08-18 复习
+ *
  */
 public class StartOffer40 {
 
-
-    public static void main(String[] args) {
-
-    }
     // 使用快排对数组进行排序 取出前K个值就行
     public int[] getLeastNumbers(int [] input, int k) {
         fastSort(input,0,input.length-1,k);
@@ -47,9 +47,11 @@ public class StartOffer40 {
     }
 
     private int partation(int[] a,int low ,int high){
-        int privot = a[high];//取最后一个数作为分区点
+        // 取最后一个数作为基准数
+        int privot = a[high];
         int i = low;
         for(int j = low;j < high;j++){
+            // 从左侧挨个遍历
             if(a[j] < privot){
                 swap(a,i,j);
                 i++;
