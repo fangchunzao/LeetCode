@@ -37,12 +37,15 @@ import java.util.Queue;
  *
  * @author fcz
  * @since 2020-06-10 16:17
+ *
+ * @since 2020-08-24 复习
  **/
-public class Offer59_2 {
+public class StartOffer59_2 {
+
     Queue<Integer> que;
     Deque<Integer> deq;
 
-    public Offer59_2() {
+    public StartOffer59_2() {
         que = new LinkedList<>();  //队列：插入和删除
         deq = new LinkedList<>();  //双端队列：获取最大值
     }

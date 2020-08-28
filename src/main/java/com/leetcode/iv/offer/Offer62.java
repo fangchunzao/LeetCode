@@ -31,13 +31,10 @@ import java.util.List;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  * @author fcz
  * @since  2020-03-30 17:31
+ *
+ * @since 2020-08-25 复习
  **/
 public class Offer62 {
-
-    public static void main(String[] args) {
-        Offer62 obj = new Offer62();
-        System.out.println(obj.lastRemaining(5,1));
-    }
 
     public int lastRemaining1(int n, int m) {
         // 构造出一个list方便指定位置的remove

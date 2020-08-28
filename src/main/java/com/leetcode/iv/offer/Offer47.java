@@ -26,18 +26,9 @@ package com.leetcode.iv.offer;
  * 链接：https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-18 复习
  */
 public class Offer47 {
-
-    public static void main(String[] args) {
-        Offer47 obj = new Offer47();
-        System.out.println(obj.maxValue(new int[][]{
-                {1,3,10},
-                {2,5,1},
-                {999,2,1},
-        }));
-        
-    }
 
     // 动态规划 在原数组上进行计算 每一个坐标点记录当前可能的最大值
     // 上侧与左侧对比 选择数字大的进行相加

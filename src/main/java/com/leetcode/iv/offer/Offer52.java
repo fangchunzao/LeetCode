@@ -20,25 +20,10 @@ import java.util.Stack;
  *
  * @author fcz
  * @since 2020-06-03 10:02
+ *
+ * @since 2020-08-18 复习
  **/
 public class Offer52 {
-
-    public static void main(String[] args) {
-        ListNode node1 = new ListNode(2);
-        ListNode node2 = new ListNode(6);
-        ListNode node3 = new ListNode(4);
-
-        ListNode node4 = new ListNode(1);
-        ListNode node5 = new ListNode(5);
-
-        node1.next = node2;
-        node2.next = node3;
-
-        node4.next = node5;
-
-        getIntersectionNode(node1, node4);
-    }
-
 
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) {

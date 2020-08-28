@@ -33,13 +33,10 @@ import java.util.Map;
  * 链接：https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-25 复习
+ *
  */
 public class StartOffer48 {
-
-    public static void main(String[] args) {
-//        Offer48 obj = new Offer48();
-//        System.out.println(obj.lengthOfLongestSubstring("abba"));
-    }
 
     // 动态规划 + 哈希表 abbbac
     public int lengthOfLongestSubstring(String s) {
@@ -97,10 +94,6 @@ public class StartOffer48 {
         }
         return res;
     }
-
-
-
-
     // 最简单的滑动窗口
     public int lengthOfLongestSubstring5(String s) {
         if (s == null || s.length() == 0) return 0;

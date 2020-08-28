@@ -1,6 +1,5 @@
 package com.leetcode.iv.offer;
 
-import java.util.Arrays;
 
 /**
  * 面试题40. 最小的k个数
@@ -19,7 +18,7 @@ import java.util.Arrays;
  * 输入：arr = [0,1,2,1], k = 1
  * 输出：[0]
  *
- * @since 2020-08-18 复习
+ * @since 2020-08-25 复习
  *
  */
 public class StartOffer40 {

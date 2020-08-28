@@ -30,16 +30,9 @@ import java.util.Arrays;
  * @author fcz
  * @since 2020-06-16 14:56
  *
- * @since 2020-07-01
+ * @since 2020-08-25 复习
  **/
 public class Offer66 {
-
-    public static void main(String[] args) {
-        Offer66 obj = new Offer66();
-        System.out.println(Arrays.toString(obj.constructArr(new int[]{
-                1,2,3,4,5
-        })));
-    }
 
     /**
      * 表格分割法

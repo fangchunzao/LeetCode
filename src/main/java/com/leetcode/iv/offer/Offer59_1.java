@@ -1,8 +1,6 @@
 package com.leetcode.iv.offer;
 
-import java.util.Arrays;
-import java.util.Deque;
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * description 面试题59 - I. 滑动窗口的最大值
@@ -31,15 +29,11 @@ import java.util.LinkedList;
  *
  * @author fcz
  * @since 2020-06-10 15:32
+ *
+ * @since 2020-08-24 复习
  **/
 public class Offer59_1 {
 
-    public static void main(String[] args) {
-        Offer59_1 obj = new Offer59_1();
-        System.out.println(Arrays.toString(obj.maxSlidingWindow(new int[]
-                {1,3,-1,-3,5,3,6,7}, 3
-        )));
-    }
 
     public int[] maxSlidingWindow(int[] nums, int k) {
         if(nums.length == 0 || k == 0)
@@ -50,7 +44,7 @@ public class Offer59_1 {
 
         for (int windowLeft = 1 - k, windowRight = 0; windowRight < nums.length; windowLeft++, windowRight++) {
             // 维护窗口前面的推进
-            if (windowLeft > 0 && deque.peekFirst() == nums[windowLeft - 1]) {
+            if (windowLeft > 0 && deque.getFirst() == nums[windowLeft - 1]) {
                 deque.removeFirst();
             }
             // 维护窗口内的单调递减 以及末尾的后推
@@ -59,7 +53,7 @@ public class Offer59_1 {
             }
             deque.addLast(nums[windowRight]);
             if(windowLeft >= 0)
-                res[windowLeft] = deque.peekFirst();
+                res[windowLeft] = deque.getFirst();
         }
         return res;
     }

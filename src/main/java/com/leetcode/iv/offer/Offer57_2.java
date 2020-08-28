@@ -6,19 +6,19 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @author fcz
- * @description 面试题57 - II. 和为s的连续正数序列
+ *
+ * description 面试题57 - II. 和为s的连续正数序列
  *
  * 输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数）。
  *
  * 序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。
  *
- *  
  *
  * 示例 1：
  *
  * 输入：target = 9
  * 输出：[[2,3,4],[4,5]]
+ *
  * 示例 2：
  *
  * 输入：target = 15
@@ -28,16 +28,12 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
- * @date 2020-03-06 14:16
+ * @author fcz
+ * @since 2020-03-06 14:16
+ *
+ * @since 2020-08-20 复习
  **/
 public class Offer57_2 {
-
-    public static void main(String[] args) {
-        Offer57_2 obj = new Offer57_2();
-//        System.out.println(9/2);
-        System.out.println(Arrays.toString(obj.findContinuousSequence1(9)));
-
-    }
 
     // 滑动窗口 双指针
     public int[][] findContinuousSequence(int target) {

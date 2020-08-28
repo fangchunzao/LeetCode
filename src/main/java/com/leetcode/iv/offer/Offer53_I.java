@@ -18,13 +18,35 @@ package com.leetcode.iv.offer;
  * 链接：https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
+ * @since 2020-08-18 复习
+ *
  */
 public class Offer53_I {
 
-    public static void main(String[] args) {
-
+    // 使用二分查找找到target第一次出现的位置
+    public int search1(int[] nums, int target) {
+        int leftIndex = bina213rySearch(nums, target);
+        int cnt = 0;
+        for (int i = leftIndex; i < nums.length; i++) {
+            if (nums[i] != target)
+                break;
+            cnt++;
+        }
+        return cnt;
     }
 
+    public static int bina213rySearch(int[] nums, int tar) {
+        int left = 0, right = nums.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] < tar) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return left;
+    }
     // 有序数组 采用二分查找
     public int search(int[] nums, int target) {
         // 查询出target最后的位置 - （target - 1）最后的位置 就是个数
@@ -43,18 +65,6 @@ public class Offer53_I {
         }
         return left;
     }
-
-    // 暴力
-    public int search1(int[] nums, int target) {
-        int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-           if (nums[i] == target)
-               count++;
-        }
-        return count;
-    }
-
-
 
 
 }

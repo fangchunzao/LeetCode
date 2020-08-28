@@ -27,9 +27,10 @@ import java.util.Set;
  *
  * @author fcz
  * @since 2020-06-10 10:41
+ *
+ * @since 2020-08-24 复习
  **/
 public class Offer61 {
-
     /**
      * 除了0，数组不能有重复的数字
      * 最大值和最小值的差小于5
@@ -53,18 +54,21 @@ public class Offer61 {
     }
 
     /**
-     *
-     * @param nums
-     * @return
+     * 1. 不能存在重复
+     * 2. 最大值减去最小值 < 5
      */
     public boolean isStraight1(int[] nums) {
         Arrays.sort(nums); // 数组排序
         int joker = 0;
         for(int i = 0; i < 4; i++) {
-            if(nums[i] == 0) joker++; // 统计大小王数量
-            else if(nums[i] == nums[i + 1]) return false; // 若有重复，提前返回 false
+            // 统计大小王数量 找出最小值的下标
+            if(nums[i] == 0) joker++;
+                // 若有重复，提前返回 false
+            else if(nums[i] == nums[i + 1])
+                return false;
         }
-        return nums[4] - nums[joker] < 5; // 最大牌 - 最小牌 < 5 则可构成顺子
+        // 最大牌 - 最小牌 < 5 则可构成顺子
+        return nums[4] - nums[joker] < 5;
     }
 
 

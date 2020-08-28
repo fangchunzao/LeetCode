@@ -13,6 +13,10 @@ package com.leetcode.iv.offer;
  * 输入: 2
  * 输出: [0.02778,0.05556,0.08333,0.11111,0.13889,0.16667,0.13889,0.11111,0.08333,0.05556,0.02778]
  *
+ * 1-6 6
+ * 2-12 11
+ * 3-18 16
+ *
  * 限制：
  * 1 <= n <= 11
  *
@@ -22,12 +26,11 @@ package com.leetcode.iv.offer;
  *
  * @author fcz
  * @since  2020-06-09 14:49
+ *
+ * @since 2020-08-24 复习
  **/
-public class Offer60 {
+public class StartOffer60 {
 
-    public static void main(String[] args) {
-
-    }
 
     /**
      * 动态规划

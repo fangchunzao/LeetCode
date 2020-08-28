@@ -26,21 +26,15 @@ package com.leetcode.iv.offer;
  *
  * @author fcz
  * @since  2020-06-08 10:25
+ *
+ * @since 2020-08-20 复习
  **/
 public class Offer56_2 {
 
-    public static void main(String[] args) {
-        Offer56_2 obj = new Offer56_2();
-        System.out.println(obj.singleNumber(new int[]{
-                3,4,3,3
-        }));
-    }
-
-
     /**
      * 位运算
-     * 使用二进制的方式，对于出现3次的数字，各 二进制位 出现的次数都是 33 的倍数
-     * 因此，统计所有数字的各二进制位中 11 的出现次数，并对 33 求余，结果则为只出现一次的数字
+     * 使用二进制的方式，对于出现3次的数字，各 二进制位 出现的次数都是 3 的倍数
+     * 因此，统计所有数字的各二进制位中 1 的出现次数，并对 3 求余，结果则为只出现一次的数字
      */
     public int singleNumber(int[] nums) {
         // int为32数字

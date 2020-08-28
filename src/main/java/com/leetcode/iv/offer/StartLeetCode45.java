@@ -2,7 +2,7 @@ package com.leetcode.iv.offer;
 
 /**
  * @author fcz
- * @description 面试题45. 把数组排成最小的数
+ * description 面试题45. 把数组排成最小的数
  *
  * 输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
  *
@@ -27,12 +27,6 @@ package com.leetcode.iv.offer;
  * @date 2020-04-20 16:53
  **/
 public class StartLeetCode45 {
-
-    public static void main(String[] args) {
-        StartLeetCode45 obj = new StartLeetCode45();
-        obj.minNumber(new int[]{10,2,0,0});
-    }
-
 
     //  设 nums 任意两数字的字符串格式 x 和 y
     //  使用快排 按照 x + y > y + x 的规则进行排序

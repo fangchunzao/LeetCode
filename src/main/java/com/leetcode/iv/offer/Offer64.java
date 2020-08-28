@@ -18,12 +18,10 @@ package com.leetcode.iv.offer;
  *
  * @author fcz
  * @since 2020-06-10 15:21
+ *
+ * @since 2020-08-25 复习
  **/
 public class Offer64 {
-
-    public static void main(String[] args) {
-
-    }
 
     public int sumNums(int n) {
         // 使用&&的规则 判断n的条件

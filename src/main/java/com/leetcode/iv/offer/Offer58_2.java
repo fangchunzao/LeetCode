@@ -26,12 +26,10 @@ package com.leetcode.iv.offer;
  *
  * @author fcz
  * @since  2020-06-09 10:41
+ *
+ * @since 2020-08-24 复习
  **/
 public class Offer58_2 {
-
-    public static void main(String[] args) {
-        System.out.println(reverseLeftWords4("abcd", 2));
-    }
 
     /**
      * 遍历并计算位置

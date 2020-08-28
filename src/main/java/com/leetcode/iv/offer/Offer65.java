@@ -19,13 +19,10 @@ package com.leetcode.iv.offer;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  * @author fcz
  * @since 2020-06-16 10:09
+ *
+ * @since 2020-08-25 复习
  **/
 public class Offer65 {
-
-    public static void main(String[] args) {
-        Offer65 obj = new Offer65();
-        System.out.println(obj.add(2,3));
-    }
 
     /**
      * 不能用 + - * / 那肯定是要使用位运算了
