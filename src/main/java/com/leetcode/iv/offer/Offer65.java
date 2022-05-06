@@ -7,11 +7,11 @@ package com.leetcode.iv.offer;
  *
  * 输入: a = 1, b = 1
  * 输出: 2
- *  
+ *
  *
  * 提示：
  *
- * a, b 均可能是负数或 0
+ * a,b均可能是负数或 0
  * 结果不会溢出 32 位整数
  *
  * 来源：力扣（LeetCode）

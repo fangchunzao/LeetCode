@@ -8,7 +8,7 @@ package com.leetcode.iv.offer;
  *
  * 例如，输入12，1～12这些整数中包含1 的数字有1、10、11和12，1一共出现了5次。
  *
- *  
+ *
  *
  * 示例 1：
  *
@@ -18,7 +18,7 @@ package com.leetcode.iv.offer;
  *
  * 输入：n = 13
  * 输出：6
- *  
+ *
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof

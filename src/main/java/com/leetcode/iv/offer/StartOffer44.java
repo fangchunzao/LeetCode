@@ -19,11 +19,11 @@ import java.util.List;
  *
  * 输入：n = 11
  * 输出：0
- *  
+ *
  *
  * 限制：
  *
- * 0 <= n < 2^31
+ * 0 <= n <2^31
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof

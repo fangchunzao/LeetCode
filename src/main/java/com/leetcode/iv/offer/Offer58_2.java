@@ -9,12 +9,12 @@ package com.leetcode.iv.offer;
  * 示例 1：
  *
  * 输入: s = "abcdefg", k = 2
- * 输出: "cdefgab"
+ * 输出:"cdefgab"
  * 示例 2：
  *
  * 输入: s = "lrloseumgh", k = 6
- * 输出: "umghlrlose"
- *  
+ * 输出:"umghlrlose"
+ *
  *
  * 限制：
  *

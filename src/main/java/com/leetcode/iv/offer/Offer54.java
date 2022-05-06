@@ -7,7 +7,7 @@ import com.leetcode.struct.TreeNode;
  *
  * 给定一棵二叉搜索树，请找出其中第k大的节点。
  *
- *  
+ *
  *
  * 示例 1:
  *
@@ -16,7 +16,7 @@ import com.leetcode.struct.TreeNode;
  *   / \
  *  1   4
  *   \
- *    2
+ *   2
  * 输出: 4
  * 示例 2:
  *

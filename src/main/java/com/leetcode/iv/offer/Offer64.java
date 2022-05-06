@@ -6,11 +6,11 @@ package com.leetcode.iv.offer;
  * 示例 1：
  *
  * 输入: n = 3
- * 输出: 6
+ * 输出:6
  * 示例 2：
  *
  * 输入: n = 9
- * 输出: 45
+ * 输出:45
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/qiu-12n-lcof

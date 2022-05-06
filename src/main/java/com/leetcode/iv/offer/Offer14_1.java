@@ -13,11 +13,11 @@ package com.leetcode.iv.offer;
  * 输入: 2
  * 输出: 1
  * 解释: 2 = 1 + 1, 1 × 1 = 1
- * 示例 2:
+ * 示例2:
  *
  * 输入: 10
  * 输出: 36
- * 解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36
+ * 解释: 10 = 3 + 3 + 4, 3 ×3 ×4 = 36
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/jian-sheng-zi-lcof

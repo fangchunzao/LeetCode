@@ -9,7 +9,7 @@ package com.leetcode.iv.offer;
  *
  * 输入: nums = [5,7,7,8,8,10], target = 8
  * 输出: 2
- * 示例 2:
+ * 示例2:
  *
  * 输入: nums = [5,7,7,8,8,10], target = 6
  * 输出: 0

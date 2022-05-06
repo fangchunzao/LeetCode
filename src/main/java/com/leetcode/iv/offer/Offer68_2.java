@@ -24,7 +24,7 @@ import com.leetcode.struct.TreeNode;
  *          7  4
  * 输出: 3
  * 解释: 节点 5 和节点 1 的最近公共祖先是节点 3。
- * 示例 2:
+ * 示例2:
  *
  * 输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
  * 输出: 5

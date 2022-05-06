@@ -13,7 +13,7 @@ package com.leetcode.iv.offer;
  *
  * 输入：nums = [9,1,7,9,7,9,7]
  * 输出：1
- *  
+ *
  *
  * 限制：
  *

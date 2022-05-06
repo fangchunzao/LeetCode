@@ -11,7 +11,7 @@ package com.leetcode.iv.offer;
  * 输入: 12258
  * 输出: 5
  * 解释: 12258有5种不同的翻译，分别是"bccfi", "bwfi", "bczi", "mcfi"和"mzi"
- *  
+ *
  *
  * 提示：
  *

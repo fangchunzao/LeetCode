@@ -58,4 +58,12 @@ public class Dic01_02 {
         return sum1 == sum2;
     }
 
+    public static void main(String[] args) {
+        System.out.println((int)'a' + (int)'z');
+        System.out.println((int)'b' + (int)'y') ;
+        Dic01_02 dic = new Dic01_02();
+        boolean flag = dic.CheckPermutation1("az", "by");
+        System.out.println(flag);
+    }
+
 }

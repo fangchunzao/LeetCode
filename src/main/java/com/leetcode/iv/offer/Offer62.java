@@ -20,11 +20,11 @@ import java.util.List;
  * 示例 1：
  *
  * 输入: n = 5, m = 3
- * 输出: 3
+ * 输出:3
  * 示例 2：
  *
  * 输入: n = 10, m = 17
- * 输出: 2
+ * 输出:2
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof
