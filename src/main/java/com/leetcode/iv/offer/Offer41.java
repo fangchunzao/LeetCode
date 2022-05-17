@@ -31,7 +31,9 @@ package com.leetcode.iv.offer;
 public class Offer41 {
 
     public static void main(String[] args) {
-
+        Offer41 obj = new Offer41();
+        // [-2,1,-3,4,-1,2,1,-5,4]
+        obj.maxSubArray1(new int[]{-2,-9,-3,-9,-1,-2,-1,-5,-4});
     }
 
     // 使用两个数字进行记录

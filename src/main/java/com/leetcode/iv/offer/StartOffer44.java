@@ -41,6 +41,7 @@ public class StartOffer44 {
 
     // 找规律 数学法
     // 规律 0~9有10个数字，10~99有90个数字，100~999有900个数字 1000~9999 9000个数字
+    // 先找到第n位是哪一个数字 然后找出位置
     public int findNthDigit(int n) {
         if (n < 10)
             return n;

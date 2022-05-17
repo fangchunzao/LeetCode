@@ -26,6 +26,17 @@ package com.leetcode.iv.offer;
  */
 public class Offer10_2 {
 
+
+    // 有一头牛，每年年初生一头小牛，每头小牛第四个年头每年年初也生一头小牛，按此规律，若无牛死亡，第N年有多少头牛？
+    // n    1   2   3   4   5   6   7   8   9   10
+    // res  2   3   4   6   9
+    public Integer niu(int year) {
+        if(year < 4){
+            return year;
+        }
+        return niu(year - 1) + niu(year - 3);
+    }
+
     public static void main(String[] args) {
         Offer10_2 obj = new Offer10_2();
         int aa = 10;

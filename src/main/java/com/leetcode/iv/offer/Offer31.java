@@ -1,8 +1,6 @@
 package com.leetcode.iv.offer;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * 面试题31. 栈的压入、弹出序列

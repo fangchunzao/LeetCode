@@ -23,6 +23,7 @@ package com.leetcode.iv.offer;
  */
 public class Offer53_I {
 
+
     // 使用二分查找找到target第一次出现的位置
     public int search1(int[] nums, int target) {
         int leftIndex = bina213rySearch(nums, target);

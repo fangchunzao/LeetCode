@@ -41,6 +41,18 @@ import com.leetcode.struct.TreeNode;
  **/
 public class Offer54 {
 
+    public int kthLargest123(TreeNode root, int k) {
+        if (root == null) {
+            return k;
+        }
+        k = kthLargest123(root.right, k);
+        if (--k == 0) {
+            res = root.val;
+        }
+        k = kthLargest123(root.left, k);
+        return k;
+    }
+
     /**
      * 二叉搜索树寻找第K大的节点
      * 可以通过右 -> 中 -> 左的方式找到最大值

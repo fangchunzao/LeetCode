@@ -1,5 +1,6 @@
 package com.leetcode.iv.offer;
 
+import javax.swing.*;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -31,6 +32,7 @@ import java.util.Set;
  * @since 2020-08-24 复习
  **/
 public class Offer61 {
+
     /**
      * 除了0，数组不能有重复的数字
      * 最大值和最小值的差小于5

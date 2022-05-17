@@ -13,7 +13,7 @@ import java.util.Stack;
  *
  * 示例 1:
  *
- * 给定二叉树 [3,9,20,null,null,15,7]
+ * 给定二叉树 [3,9,20,null,null,15,7].
  *
  *     3
  *    / \
@@ -45,6 +45,30 @@ import java.util.Stack;
  * @since 2020-08-20 复习
  **/
 public class Offer55_2 {
+
+    boolean flag = true;
+
+    // [1,2,2,3,3,null,null,4,4]
+    //           1
+    //         /   \
+    //        2     2
+    //       / \   / \
+    //      3   3 nul nul
+    //     / \
+    //    4   4
+    // 计算深度的同时比较 左右子树的最大深度  >1 非平衡树
+    public int isBalanced3(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = isBalanced3(root.left);
+        int right = isBalanced3(root.right);
+        if (Math.abs(left - right) > 1) {
+            flag = false;
+        }
+        return Math.max(left, right) + 1;
+    }
+
 
     /**
      * 递归判断

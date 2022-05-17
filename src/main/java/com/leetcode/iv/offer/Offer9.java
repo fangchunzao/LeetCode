@@ -35,6 +35,7 @@ public class Offer9 {
     Stack<Integer> stack1;
     Stack<Integer> stack2;
 
+
     int size = 0;
 
     public Offer9() {
@@ -42,6 +43,8 @@ public class Offer9 {
         stack2 = new Stack<>();
         size = 0;
     }
+
+
 
     public void appendTail(int value) {
         while (!stack1.isEmpty()) {

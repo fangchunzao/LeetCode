@@ -36,6 +36,11 @@ public class Offer30 {
         stack2 = new Stack<>();
     }
 
+    // 3 -> 5
+    // 3 -> 5
+    // 6 -> 3 -> 5
+    // 3 -> 5
+
     public void push(int x) {
         stack1.add(x);
         // 保证栈B的顶部放的是当前最小的数

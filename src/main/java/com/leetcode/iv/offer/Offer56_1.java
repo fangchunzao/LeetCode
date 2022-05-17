@@ -1,5 +1,7 @@
 package com.leetcode.iv.offer;
 
+import java.util.Arrays;
+
 /**
  * description 面试题56 - I. 数组中数字出现的次数
  *
@@ -31,6 +33,13 @@ package com.leetcode.iv.offer;
  **/
 public class Offer56_1 {
 
+    public static void main(String[] args) {
+
+        Offer56_1 obj = new Offer56_1();
+        int[] nums = new int[]{1,2,5,2};
+        System.out.println(Arrays.toString(obj.singleNumbers(nums)));
+    }
+
     // 把所有数字异或，得到一个数，这个数必定是两个只出现一次的数字异或得到的
     // 异或规则是两个相应的bit位相同为0，不同为1
     // 根据这个任意找一个为1的数位
@@ -51,7 +60,7 @@ public class Offer56_1 {
         // 此时再将两个数组两两异或就可以得到最终结果。
         int[] result = new int[2];
         for (int num : nums) {
-            // first的特殊性使用0判断不能使用1 将数组分类
+            // first的特殊性使用0判断不能使用1 &计算完的值== first 不是==1
             if ((num & first) == 0) {
                 result[0] ^= num;
             } else {

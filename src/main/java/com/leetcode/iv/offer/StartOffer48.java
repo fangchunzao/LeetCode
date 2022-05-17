@@ -1,9 +1,6 @@
 package com.leetcode.iv.offer;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 面试题48. 最长不含重复字符的子字符串

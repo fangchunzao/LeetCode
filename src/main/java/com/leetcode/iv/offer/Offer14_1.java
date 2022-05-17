@@ -33,6 +33,7 @@ public class Offer14_1 {
         memory = new int[n + 1];
         return integerBreakHelper(n);
     }
+
     public int integerBreakHelper(int n) {
         if (n == 2) {
             return 1;

@@ -24,6 +24,27 @@ package com.leetcode.iv.offer;
  */
 public class Offer53_II {
 
+    public static void main(String[] args) {
+        Offer53_II obj = new Offer53_II();
+        int[] nums = new int[]{0};
+        System.out.println(obj.missingNumber213(nums));
+        System.out.println(obj.missingNumber(nums));
+    }
+
+
+    public int missingNumber213(int[] nums) {
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left);
+            if (nums[mid] <= mid) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return left;
+    }
+
     /**
      * 二分法
      * 因为有且一个数字不存在，假设位置为 X

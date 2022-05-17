@@ -14,12 +14,16 @@ import java.util.*;
  *
  *   滑动窗口的位置                最大值
  * ---------------               -----
- *  [1  3  -1] -3  5  3  6  7       3
- *  1 [3  -1  -3] 5  3  6  7       3
- *  1  3 [-1  -3  5] 3  6  7       5
- *  1  3  -1 [-3  5  3] 6  7       5
- *  1  3  -1  -3 [5  3  6] 7       6
- *  1  3  -1  -3  5 [3  6  7]      7
+ *  [1  3  -1] -3  5  3  6  7       3  queue [3, -1]
+ *  1 [3  -1  -3] 5  3  6  7       3   queue [3, -1,-3]
+ *  1  3 [-1  -3  5] 3  6  7       5   queue [5]
+ *  1  3  -1 [-3  5  3] 6  7       5   queue [5,3]
+ *  1  3  -1  -3 [5  3  6] 7       6   queue [6]
+ *  1  3  -1  -3  5 [3  6  7]      7   queue [7]
+ *
+ *  1  3  [-1 5  2]  1  -1  1
+ *  1  3  -1  [5  1  2]  -1  1
+ *  1  3  -1  5  [1   2  -1]  1
  *
  *  你可以假设 k 总是有效的，在输入数组不为空的情况下，1 ≤ k ≤ 输入数组的大小。
  *
@@ -33,7 +37,6 @@ import java.util.*;
  * @since 2020-08-24 复习
  **/
 public class Offer59_1 {
-
 
     public int[] maxSlidingWindow(int[] nums, int k) {
         if(nums.length == 0 || k == 0)
@@ -52,6 +55,7 @@ public class Offer59_1 {
                 deque.removeLast();
             }
             deque.addLast(nums[windowRight]);
+
             if(windowLeft >= 0)
                 res[windowLeft] = deque.getFirst();
         }

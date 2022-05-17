@@ -78,26 +78,23 @@ public class Offer7 {
         // 结束
         if (preorderStart == preorderEnd) {
             return root;
-        } else {
-            // 获取中序遍历中 根节点的位置 左边就是左子树 右边是右子树
-            int rootIndex = indexMap.get(rootVal);
-            // 分别计算个数用于 分割前序遍历 leftNode数量就是前序遍历的左子树 rightNodes数量就是前序遍历的右子树
-            int leftNodes = rootIndex - inorderStart,
-                    rightNodes = inorderEnd - rootIndex;
-
-            // 构建左子树
-            TreeNode leftSubtree = buildTree(preorder, preorderStart + 1, preorderStart + leftNodes,
-                    inorder, inorderStart, rootIndex - 1, indexMap);
-            // 构建右子树
-            System.out.println(preorderStart + leftNodes + 1);
-            System.out.println(preorderEnd - rightNodes + 1);
-            TreeNode rightSubtree = buildTree(preorder, preorderEnd - rightNodes + 1, preorderEnd,
-                    inorder, rootIndex + 1, inorderEnd, indexMap);
-
-            root.left = leftSubtree;
-            root.right = rightSubtree;
-            return root;
         }
+        // 获取中序遍历中 根节点的位置 左边就是左子树 右边是右子树
+        int rootIndex = indexMap.get(rootVal);
+        // 分别计算个数用于 分割前序遍历 leftNode数量就是前序遍历的左子树 rightNodes数量就是前序遍历的右子树
+        int leftNodes = rootIndex - inorderStart;
+        int rightNodes = inorderEnd - rootIndex;
+
+        // 构建左子树
+        TreeNode leftSubtree = buildTree(preorder, preorderStart + 1, preorderStart + leftNodes,
+                inorder, inorderStart, rootIndex - 1, indexMap);
+        // 构建右子树
+        TreeNode rightSubtree = buildTree(preorder, preorderEnd - rightNodes + 1, preorderEnd,
+                inorder, rootIndex + 1, inorderEnd, indexMap);
+
+        root.left = leftSubtree;
+        root.right = rightSubtree;
+        return root;
     }
 
     // 手写一下上面的步骤

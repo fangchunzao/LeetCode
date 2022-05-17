@@ -47,7 +47,7 @@ public class Offer46 {
             // 够2位 需要判断 2个数字是否小于 25
             if (numCharStr[index] - '0' == 0)
                 return count;
-            String chStr = String.valueOf(numCharStr[index] - '0') + String.valueOf(numCharStr[index+1] - '0');
+            String chStr = numCharStr[index] - '0' + String.valueOf(numCharStr[index+1] - '0');
             int chInt = Integer.parseInt(chStr);
             if (chInt <= 25)
                 count += translateNum(numCharStr, index + 2);

@@ -61,7 +61,6 @@ package com.leetcode.iv.offer;
  **/
 public class Offer67 {
 
-
     /**
      * 有以下四种字符需要考虑
      * 1. 首部空格：删除之即可；

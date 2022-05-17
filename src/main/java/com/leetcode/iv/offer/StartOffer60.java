@@ -31,7 +31,6 @@ package com.leetcode.iv.offer;
  **/
 public class StartOffer60 {
 
-
     /**
      * 动态规划
      * 可以拆解问题为N个骰子的点数分解为 n-1个骰子的点数加上一个骰子的点数
