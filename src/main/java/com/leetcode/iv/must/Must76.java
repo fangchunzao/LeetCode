@@ -62,11 +62,13 @@ public class Must76 {
                 cnt.put(s.charAt(r), cnt.getOrDefault(s.charAt(r), 0) + 1);
             }
             while (check() && l <= r) {
+                // 满足条件
                 if (r - l + 1 < len) {
                     len = r - l + 1;
                     ansL = l;
-                    ansR = l + len;
+                    ansR = l + len; // R + 1
                 }
+                // 缩小左窗口 直到找到最小的窗口
                 if (ori.containsKey(s.charAt(l))) {
                     cnt.put(s.charAt(l), cnt.getOrDefault(s.charAt(l), 0) - 1);
                 }

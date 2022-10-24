@@ -1,19 +1,41 @@
 package com.leetcode;
 
 import java.util.*;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.FutureTask;
+
 
 /**
  * @author FCZ 
  * @since 2018/12/14 10:18
  */
 public class Test {
+
     public static void main(String[] args) {
-        Test t = new Test();
-        t.findKth(new int[]{1332802,1177178,1514891,871248,753214,123866,1615405,328656,1540395,968891,1884022,252932,1034406,1455178,821713,486232,860175,1896237,852300,566715,1285209,1845742,883142,259266,520911,1844960,218188,1528217,332380,261485,1111670,16920,1249664,1199799,1959818,1546744,1904944,51047,1176397,190970,48715,349690,673887,1648782,1010556,1165786,937247,986578,798663},
-                49, 24);
+        List<StringBuilder> list = new ArrayList<>();
+        for (int i = 0; i < 5000; i++) {
+            list.add( new StringBuilder("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                    "").append(i));
+        }
+    }
+
+    public int[][] matrixReshape(int[][] mat, int r, int c) {
+        int m = mat.length;
+        int n = mat[0].length;
+        if(m*n != r*c) {
+            return mat;
+        }
+
+        int[][] resArr = new int[r][c];
+
+        int sum = m * n;
+        for(int i = 0; i < sum; i++) {
+            int y = i / c;
+            int x = i % c;
+            resArr[y][x] = mat[i/n][i%n];
+        }
+        return resArr;
+
     }
 
     public int findKth(int[] a, int n, int K) {
@@ -27,6 +49,7 @@ public class Test {
 
         return a[K];
     }
+
 
     public void findKthQuickSort(int[] a, int left, int right, int k) {
         if(left > right)

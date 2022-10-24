@@ -45,7 +45,7 @@ public class Offer34 {
 
         tempSum += root.val;
         list.add(root.val);
-        // 必须是子节点
+        // 必须是叶子节点
         if (sum == tempSum && root.left == null && root.right == null) {
             result.add(new ArrayList<>(list));
             list.remove(list.size() - 1);
