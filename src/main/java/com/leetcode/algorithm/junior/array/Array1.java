@@ -15,7 +15,7 @@ public class Array1 {
     public static void main(String[] args) {
 
     }
-
+    // 1,1,1,3,3,3,5,7
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
         int number = 0;
