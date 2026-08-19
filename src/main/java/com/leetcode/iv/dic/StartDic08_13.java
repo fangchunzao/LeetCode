@@ -31,11 +31,26 @@ import java.util.Arrays;
  */
 public class StartDic08_13 {
 
+    public static void main(String[] args) {
+        int[][] nums = new int[][]{
+                {1,1,1},
+                {2,3,4},
+                {2,6,7},
+                {3,4,5},
+        };
+        StartDic08_13 obj = new StartDic08_13();
+        obj.pileBox(nums);
+    }
+
     // 动态规划
     public int pileBox(int[][] box) {
         if (box == null || box.length == 0)
             return 0;
         // 对数组进行排序  [wi, di, hi] [升序, 降序, 降序]
+        //                {1,1,1},
+        //                {2,6,7},
+        //                {2,3,4},
+        //                {3,4,5},
         Arrays.sort(box , (a,b) -> a[0] == b[0] ? a[1] == b[1] ? b[2] - a[2] : b[1] - a[1] : a[0] - b[0]);
         int[] dp = new int[box.length];
         dp[0] = box[0][2];

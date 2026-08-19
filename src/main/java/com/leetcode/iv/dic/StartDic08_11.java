@@ -31,6 +31,9 @@ package com.leetcode.iv.dic;
  */
 public class StartDic08_11 {
 
+    // 1    2   3   4   5   6   7   8   9   10  11  12  13  14  15
+    // 1    1   1   1   2   2   2   2   2   4   4   4   4   4   8
+
     // 动态规划
     public int waysToChange(int n) {
         int[] dp = new int[n + 1];
